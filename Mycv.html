@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Albishry CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Dark mode and light mode styles */
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        body.dark-mode {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        /* Responsive styles */
+        .container {
+            margin-top: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+            }
+        }
+
+        /* Animation */
+        .animate {
+            animation: slideIn 2s;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="container animate">
+        <div class="text-center">
+            <h1 style="background-color:rgb(35, 196, 134);">بسم الله الرحمن الرحيم</h1>
+            <h1 style="background-color:DodgerBlue;">Mohammed Albishry</h1>
+            <p>Email: <a href="mailto:mohammed1albishry@gmail.com">mohammed1albishry@gmail.com</a> | Phone: 0538009945 | Riyadh, Saudi Arabia</p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>As a dedicated Information Technology student at Qassim University, I am eager to secure a challenging summer training opportunity that allows me to apply and enhance my skills in IT.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor's degree in Information Technology (In Progress)</strong></p>
+            <p>Expected Graduation Date: May, 2024</p>
+            <p>Qassim University | GPA: 3.6 of 5</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical and Soft Skills</h2>
+            <ul>
+                <li>Tools: Microsoft Office, Visual Studio, Cisco Packet Tracer</li>
+                <li>Soft Skills: Problem Solving, Teamwork, Self-learning</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certification and Courses</h2>
+            <ul>
+                <li>Udemy | The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert - 21 hours course</li>
+                <li>Udemy | The Complete 2024 Web Development Bootcamp (HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps) – 62 hours course</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic (Native)</li>
+                <li>English (Full professional working proficiency)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+
+        <div class="text-center mt-3">
+            <button onclick="toggleMode()" class="btn btn-secondary">Toggle Mode</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>
